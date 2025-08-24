@@ -18,7 +18,14 @@ const BlogDetail = () => {
       {blogDetail ? (
         <>
           <h3>{blogDetail.title}</h3>
+          <img 
+              src="https://picsum.photos/800/400" 
+              alt={blogDetail.title} 
+              className="img-fluid rounded mb-3"
+              style={{ maxHeight: "400px", objectFit: "cover" }}
+            />
           <p className='lead'>{blogDetail.description}</p>
+          
         </>
       ) : (
         <h4>No Data Found</h4>
